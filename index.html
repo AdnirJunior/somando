@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10 - Somando numeros</title>
+    <style>
+        body{
+            background-image: radial-gradient(circle at 76.49% 87.84%, #00a6ff 0, #00a1ff 5%, #009cff 10%, #1396ff 15%, #638fff 20%, #8a87ff 25%, #a77fff 30%, #bf76fb 35%, #d36dee 40%, #e464e0 45%, #f25cd0 50%, #fd55c0 55%, #ff4faf 60%, #ff4b9d 65%, #ff4a8c 70%, #ff4d7b 75%, #ff516b 80%, #ff585a 85%, #ff5f4a 90%, #fe673b 95%, #f5702a 100%);
+            padding-left: 40px;
+        }
+
+        div#footer{
+            margin-top: 35%;
+            text-align: right;
+        }
+        div#res{
+            padding-top: 30px;
+        }
+        input{
+            border-radius: 04px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="txtn1" id="txtn1" placeholder="Adicione um numero"> +
+    <input type="number" name="txtn2" id="txtn2" placeholder="Outro numero aqui">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado</div>
+    <div id="footer">
+    <h3>
+        <i> Developed by Adnir Junior</i>
+    </h3>
+    </div>
+<script>
+    function somar() {
+        var tn1 = document.getElementById("txtn1");
+        var tn2 = document.getElementById("txtn2");
+        var res = document.getElementById("res");
+        var n1 = Number(tn1.value);
+        var n2 = Number(tn2.value) ;
+        var s = n1 + n2;
+        res.innerHTML = `A soma de ${n1} e ${n2} é ${s}`;
+        
+    }
+</script>
+
+</body>
+
+
+</html>
